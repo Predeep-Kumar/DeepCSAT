@@ -17,6 +17,31 @@ import plotly.graph_objects as go
 
 # NLP
 import nltk
+import ssl
+
+# Fix SSL issue on macOS
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+    ssl._create_default_https_context = _create_unverified_https_context
+except:
+    pass
+
+# Required NLTK datasets
+resources = [
+    "stopwords",
+    "punkt",
+    "averaged_perceptron_tagger",
+    "averaged_perceptron_tagger_eng",
+    "wordnet",
+    "punkt_tab"
+]
+
+for resource in resources:
+    try:
+        nltk.data.find(resource)
+    except LookupError:
+        nltk.download(resource)
+        
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
