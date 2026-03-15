@@ -32,6 +32,47 @@ The system performs:
 ---
 
 ## 📁 Project Structure
+```
+DEEPCSAT
+│
+├── data
+│   ├── processed
+│   │   ├── csat_clean_data.csv
+│   │   └── csat_feature_engineered.csv
+│   │
+│   └── raw
+│       └── eCommerce_Customer_support_data.csv
+│
+├── models
+│   ├── tuning
+│   │
+│   ├── baseline_ann_default.h5
+│   ├── baseline_ann_tuned.h5
+│   ├── deep_ann_default.h5
+│   ├── deep_ann_tuned.h5
+│   ├── dropout_ann_default.h5
+│   ├── dropout_ann_tuned.h5
+│   │
+│   ├── feature_scaler.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── notebooks
+│   └── DeepCSAT.ipynb
+│
+├── outputs
+│   ├── plots
+│   │
+│   ├── baseline_ann_metrics.json
+│   ├── deep_ann_metrics.json
+│   ├── dropout_ann_metrics.json
+│   ├── best_model.json
+│   └── final_model_comparison.csv
+│
+├── app.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 ---
 
 ## 📥 Download Full Project
