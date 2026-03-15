@@ -37,9 +37,7 @@ The system performs:
 ## 📥 Download Full Project
 
 #### Google Drive Link:
-
-
-https://drive.google.com/drive/your-project-link
+https://drive.google.com/drive/folders/16bESa73oRMqD--F12sTshkPzgak7gEIL?usp=sharing
 
 
 ---
@@ -329,7 +327,7 @@ This project highlights strong applied machine learning engineering practices, s
 
 --- 
 ## 🤝 Author
-###Predeep Kumar
+### Predeep Kumar
 
 Machine Learning Engineer | Applied AI Systems | Production ML Deployment
 
